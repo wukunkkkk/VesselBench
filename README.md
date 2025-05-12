@@ -51,11 +51,11 @@ conda activate 'your environment'
 ```
 To train a model with the new config, you can simply run
 ```bash
-python tools/train.py my_configs/faster-rcnn.py
+python tools/train.py my_configs/faster_rcnn_vesselbench.py
 ```
 or 
 ```bash
-python tools/train.py my_configs/tood.py
+python tools/train.py my_configs/tood_vesselbench.py
 ```
 
 ### Test and inference
