@@ -77,7 +77,7 @@ download 'CAN_vesselbench' folder
 ### Data Preparation 
 ⚠️Since ground truths used for density estimation are not directly compatible with those used for object detection, different density estimation methods often require generating different formats of GT files — and the CAN method is no exception. **This process can be tedious.**
 
-Therefore, we provide a subset of the full VesselBench dataset `vessel_dataset_for_CAN` on Kaggle , specifically prepared and formatted for direct use with the CAN method. **You can download and extract it into the `CAN_vesselbench` folder.**
+Therefore, we provide a subset of the full VesselBench dataset `vessel_dataset_for_CAN` on Kaggle , specifically prepared and formatted for direct use with the CAN method. **You can download and extract `vessel_dataset_for_CAN` into the `CAN_vesselbench` folder.**
 
 After extraction, make sure the folder structure is as follows:
 
@@ -86,7 +86,7 @@ CAN_vesselbench/
 ├── vessel_dataset_for_CAN/
 │   ├── train_data/
 │   │   └── images/
-│   │   └── images-sar/
+│   │   └── images_sar/
 │   │   └── ground_truths_h5/
 │   ├── val_data/
 │   ├── test_data/
