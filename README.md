@@ -2,7 +2,7 @@
 
 This repository provides executable code for tasks like `object detection` and `density estimation` on our VesselBench-800K dataset.
 
-## Object Detection
+## 🚀Object Detection
 
 For object detection tasks, we use **[MMDetection](https://github.com/open-mmlab/mmdetection)** as the baseline framework. Please follow the official MMDetection repository for `installation` and `environment setup`. In this project, we provide configuration files for two representative models: Faster R-CNN and TOOD. You can directly use these configs with MMDetection to **train and evaluate** on the **VesselBench-800K** dataset.
 
@@ -64,16 +64,20 @@ To test the trained model, you can simply run
 python tools/test.py my_configs/faster-rcnn.py work_dirs/`checkpoint file`
 ```
 
-## Density Estimation
+## 🚀Density Estimation
 
 For density estimation or counting tasks, we provide the **[Context-Aware Crowd Counting](https://github.com/weizheliu/Context-Aware-Crowd-Counting)** method as an example implementation. Please refer to the original repository for environment setup instructions. You can follow the steps below to apply this method to our **VesselBench-800K** dataset.
 
-**Please download the `CAN_vesselbench` folder directly from this repository.**
+### Download CAN for density estimation 
+✅**Please download the `CAN_vesselbench` folder directly from this repository.**(Modified to be compatible with our multimodal dataset, the original method is designed for single-modal datasets only)
+```bash
+download 'CAN_vesselbench' folder
+```
 
 ### Data Preparation 
-Since ground truths used for density estimation are not directly compatible with those used for object detection, different density estimation methods often require generating different formats of GT files — and the CAN method is no exception. **This process can be tedious.**
+⚠️Since ground truths used for density estimation are not directly compatible with those used for object detection, different density estimation methods often require generating different formats of GT files — and the CAN method is no exception. **This process can be tedious.**
 
-**Therefore, we provide a subset of the full VesselBench dataset on Kaggle, specifically prepared and formatted for direct use with the CAN method. You can download and extract it into the `CAN_vesselbench` folder.**
+Therefore, we provide a subset of the full VesselBench dataset `vessel_dataset_for_CAN` on Kaggle , specifically prepared and formatted for direct use with the CAN method. **You can download and extract it into the `CAN_vesselbench` folder.**
 
 After extraction, make sure the folder structure is as follows:
 
@@ -82,7 +86,8 @@ CAN_vesselbench/
 ├── vessel_dataset_for_CAN/
 │   ├── train_data/
 │   │   └── images/
-│   │   └── ground_truths/
+│   │   └── images-sar/
+│   │   └── ground_truths_h5/
 │   ├── val_data/
 │   ├── test_data/
 ├── ...
