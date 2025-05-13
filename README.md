@@ -97,7 +97,7 @@ CAN_vesselbench/
 ├── ...
 ```
 
-Then, use `create_json.py` to generate the json file `train.json` `val.json` and `test.json` which contains the path to the images.
+Then, use `create_json.py` to generate the JSON file `train.json` `val.json` and `test.json` which contain the path to the images.
 ```bash
 python create_json.py
 ```
