@@ -31,7 +31,7 @@ img_paths = sorted(glob.glob(os.path.join(img_folder_msi, '*.tif')))
 # Load CANNet model
 model = CANNet()
 model = model.cuda()
-checkpoint = torch.load('multi_modal_model_best.pth.tar')
+checkpoint = torch.load('vessel_dataset_for_CAN/multi_modal_model_best.pth.tar')
 model.load_state_dict(checkpoint['state_dict'])
 model.eval()
 
