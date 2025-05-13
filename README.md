@@ -4,7 +4,7 @@ This repository provides executable code for tasks like `object detection` and `
 
 ## 🚀Object Detection
 
-For object detection tasks, we use **[MMDetection](https://github.com/open-mmlab/mmdetection)** as the baseline framework. Please follow the official MMDetection repository for `installation` and `environment setup`. In this project, we provide configuration files for two representative models: Faster R-CNN and TOOD. You can directly use these configs with MMDetection to **train and evaluate** on the **VesselBench-800K** dataset.
+For object detection tasks, we use **[MMDetection](https://github.com/open-mmlab/mmdetection)** as the baseline framework. Please follow the official MMDetection repository for **[`installation` and `environment setup`](https://mmdetection.readthedocs.io/en/latest/get_started.html)**. In this project, we provide configuration files for two representative models: Faster R-CNN and TOOD. You can directly use these configs with MMDetection to **train and evaluate** on the **VesselBench-800K** dataset.
 
 ### Dataset directory structure
 After downloading and unzipping the `dataset from Kaggle`, ensure that the VesselBench directory structure is as follows:
