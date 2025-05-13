@@ -72,13 +72,13 @@ For density estimation or counting tasks, we provide the **[Context-Aware Crowd 
 ### Download CAN for density estimation 
 ✅**Please download the `CAN_VesselBench` folder directly from this repository.**(Modified to be compatible with our multimodal dataset, the original method is designed for single-modal datasets only)
 ```bash
-download 'CAN_vesselbench' folder
+download 'CAN_VesselBench' folder
 ```
 
 ### Data Preparation 
 ⚠️Since ground truths used for density estimation are not directly compatible with those used for object detection, different density estimation methods often require generating different formats of GT files — and the CAN method is no exception. **This process can be tedious.**
 
-Therefore, we provide a subset of the full VesselBench dataset `vessel_dataset_for_CAN` on Kaggle , specifically prepared and formatted for direct use with the CAN method. **You can download and extract `vessel_dataset_for_CAN` into the `CAN_vesselbench` folder.**
+Therefore, we provide a subset of the full VesselBench dataset `vessel_dataset_for_CAN` on Kaggle , specifically prepared and formatted for direct use with the CAN method. **You can download and extract `vessel_dataset_for_CAN` into the `CAN_VesselBench` folder.**
 
 After extraction, make sure the folder structure is as follows:
 
