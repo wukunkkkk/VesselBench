@@ -32,6 +32,7 @@ VesselBench/
 ```
 
 The configuration files are located in the `my_configs` directory. Please put the `my_configs` folder into the root directory of your local MMDetection installation and make sure to modify the `data_root` in the configuration files according to your local dataset location before use.
+**Make sure your folder structure is as follows before running:**
 ```bash
 MMDetection/
 ├── configs/
@@ -69,7 +70,7 @@ python tools/test.py my_configs/faster-rcnn.py work_dirs/`checkpoint file`
 For density estimation or counting tasks, we provide the **[Context-Aware Crowd Counting](https://github.com/weizheliu/Context-Aware-Crowd-Counting)** method as an example implementation. Please refer to the original repository for environment setup instructions. You can follow the steps below to apply this method to our **VesselBench-800K** dataset.
 
 ### Download CAN for density estimation 
-✅**Please download the `CAN_vesselbench` folder directly from this repository.**(Modified to be compatible with our multimodal dataset, the original method is designed for single-modal datasets only)
+✅**Please download the `CAN_VesselBench` folder directly from this repository.**(Modified to be compatible with our multimodal dataset, the original method is designed for single-modal datasets only)
 ```bash
 download 'CAN_vesselbench' folder
 ```
