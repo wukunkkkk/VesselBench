@@ -1,6 +1,6 @@
 # VesselBench-800K
 
-This repository provides executable code for tasks like `object detection` and `density estimation` on our **[VesselBench-800K dataset](https://www.kaggle.com/datasets/jiedengaircas/vesselbench)**.
+This repository provides executable code for tasks like `object detection` and `density estimation` on our **VesselBench-800K dataset]**.
 
 ## 🚀Object Detection
 
